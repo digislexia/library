@@ -1,0 +1,63 @@
+@media all and (max-width:992px) {
+  main .books .controls .search {
+    input, button {
+      width: 100%;
+    }
+    input {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  main {
+    .settings {
+      width: 40%;
+    }
+    .books {
+      width: 60%;
+      .controls {
+        flex-wrap: wrap;
+        .sorting {
+          width: 100%;
+        }
+        .search {
+          width: 100%;
+        }
+      }
+      .list {
+        .book {
+          flex: 0 0 calc(50% - 1rem);
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 576px) {
+  main {
+    flex-wrap: wrap;
+    .settings {
+      text-align: center;
+      width: 100%;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    .books {
+      width: 100%;
+
+    }
+  }
+}
+
+@media all and (max-width:450px) {
+  main {
+    .books {
+      .list {
+        .book {
+          flex: 0 0 calc(100% - 1rem);
+        }
+      }
+    }
+  }
+}
