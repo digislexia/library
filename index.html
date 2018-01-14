@@ -17,24 +17,24 @@
       <div class="settings">
 
         <h2>Настройки</h2>
-        <form>
-          <label for="">
+        <form id="editor-form">
+          <label for="book-name">
             Название
-            <input type="text" placeholder="Котики">
+            <input type="text" id="book-name" name="book-name" placeholder="Котики" required>
           </label>
-          <label for="">
+          <label for="book-author">
             Автор
-            <input type="text" placeholder="Котик">
+            <input type="text" id="book-author" name="book-author" placeholder="Котик" required>
           </label>
-          <label for="">
+          <label for="book-date">
             Год издания
-            <input type="date">
+            <input type="date" id="book-date" name="book-date">
           </label>
-          <label for="">
+          <label for="book-length">
             Количество страниц
-            <input type="number">
+            <input type="number" id="book-length" name="book-length">
           </label>
-          <button type="button" name="button">Сохранить</button>
+          <button type="submit" name="button">Сохранить</button>
         </form>
 
       </div>
@@ -42,207 +42,44 @@
       <div class="books">
 
         <div class="controls">
-          <div class="sorting">
+          <div class="sorting" id="sort">
             <h2>Сортировка</h2>
-            <label for="">
-              <input type="radio" name="sorting" value="0" checked>
+            <label for="sortAuthor">
+              <input type="radio" name="sorting" id="sortAuthor" value="book-author" checked>
               По автору
             </label>
-            <label for="">
-              <input type="radio" name="sorting" value="1">
+            <label for="sortName">
+              <input type="radio" name="sorting"  id="sortName" value="book-name">
               По названию
             </label>
           </div>
 
           <div class="search">
             <h2>Поиск</h2>
-            <form class="">
-              <input type="text" name="" value="">
-              <button type="button" name="button">Найти</button>
+            <form class="" id="search-form">
+              <input type="text" name="" value="" id="search-input" placeholder="Введите название">
+              <button type="submit" name="button" id='search-button'>Найти</button>
             </form>
           </div>
         </div>
 
-        <div class="list">
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-            <div class="buttons">
-              <a>
-                <i class="fa fa-edit" aria-hidden="true"></i>
-                Редактировать
-              </a>
-            </div>
-            <div class="remove-button">
-              <a>
-                <i class="fa fa-remove" aria-hidden="true"></i>
-              </a>
-            </div>
+        <div class="list" id="list"></div>
 
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-          <div class="book">
-            <p class="name">Мистер кис-кис</p>
-            <p class="author">Арни шварц</p>
-          </div>
-        </div>
-
+      </div>
+      <div class="delete-modal">
+        <p class="message">
+          Уверены что хотите удалить книгу?
+        </p>
+        <a href="" class="remove">Удалить</a>
+        <a href="" class="cancel">Отменить</a>
       </div>
     </main>
 
     <footer>
-      <div class="copyright">From Digislexia with love</div>
+      <div class="copyright">
+        by Digislexia with love
+        <i class="fa fa-rocket" aria-hidden="true"></i>
+      </div>
     </footer>
 
     <script type="text/javascript" src="./dist/app.js"></script>

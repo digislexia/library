@@ -2499,6 +2499,33 @@ main {
             color: red; }
             main .books .list .book .remove-button a:hover {
               color: #cc0000; }
+  main .delete-modal {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 40%;
+    background: blue;
+    padding: 1rem;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center; }
+    main .delete-modal .message {
+      font-size: 1rem;
+      margin-bottom: 1rem; }
+    main .delete-modal a {
+      text-decoration: none;
+      margin: 0.5rem;
+      padding: 0.2rem; }
+    main .delete-modal a.remove {
+      color: white; }
+    main .delete-modal a.cancel {
+      color: lightgrey; }
 
 footer {
   min-height: 5vh;
